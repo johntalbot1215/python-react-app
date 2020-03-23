@@ -1,5 +1,4 @@
 from app import db
-from sqlalchemy.dialects.postgresql import JSON
 
 class Account(db.Model):
     __tablename__ = 'accounts'
