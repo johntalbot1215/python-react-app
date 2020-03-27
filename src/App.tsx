@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import Login from './Components/Login';
 import './App.css';
 import MainPage from './Components/MainPage';
 import NewAccount from './Components/NewAccount';
@@ -17,6 +17,9 @@ class App extends React.Component {
         <Switch>
           <Route path="/new-account">
             <NewAccount />
+          </Route>
+          <Route path="/login">
+            <Login />
           </Route>
           <Route path="/">
             <MainPage />

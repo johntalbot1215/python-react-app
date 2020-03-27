@@ -1,4 +1,23 @@
+# Golang React App
+Timekeeping app written with Python3 Flask backend, PostgreSQL database and class based React frontend.
+Features:
+    - New Account creation
+    - Login
+    - Bi-Weekly Timeentry with validation
+## Setup
+    Setup virutal enviroment to run python3 app.
+    Pip install requirements.txt
+    NPM install frontend dependencies
+    Pull Postgres Docker and run:
+        -docker run -d -p 5432:5432 -e POSTGRES_HOST_AUTH_METHOD=trust postgres
+    Create databse:
+        -psql -h localhost -U postgres -c"CREATE DATABASE timetrack"
+    Run flask-migrate:
+        flask db init
+        flask db upgrade
+    
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 

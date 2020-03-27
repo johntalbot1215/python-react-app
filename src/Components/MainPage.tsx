@@ -13,6 +13,11 @@ class MainPage extends React.Component {
                         New Account
                     </button>
                 </Link>
+                <Link to="login">
+                    <button className="Login-button">
+                        Login
+                    </button>
+                </Link>
             </div>
         )
     }
