@@ -8,6 +8,8 @@ def get_env_variable(name):
         raise Exception(message)
 
 class Config:
+    DEBUG=True
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     POSTGRES_URL = get_env_variable("POSTGRES_URL")
     POSTGRES_USER = get_env_variable("POSTGRES_USER")
     POSTGRES_PW = get_env_variable("POSTGRES_PW")
